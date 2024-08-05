@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeDex</title>
+    <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="bgVideo">
+            <source src="/assets/img/fondodrago1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <header>
+        <h2 class="logo">PokeDex</h2>
+        <nav class="nav">
+            <!--<a href="#">Inicio</a>
+            <a href="#">Información</a>
+            <a href="#">etc</a>
+            <a href="#">etc</a>
+            <button class="btn">Iniciar Sesión</button> -->
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <h1>Consulta de Pokémon</h1>
+            <input type="text" id="pokemonInput" placeholder="Ingresa el nombre o ID del Pokémon">
+            <button id="searchButton">Buscar</button>
+            <div id="pokemonInfo" class="pokemon-info">
+                <div class="pokemon-details">
+                    <img id="pokemonImage" src="" alt="Imagen del Pokémon">
+                    <div class="pokemon-text-info">
+                        <h2 id="pokemonName"></h2>
+                        <p><strong>ID:</strong> <span id="pokemonId"></span></p>
+                        <p><strong>Altura:</strong> <span id="pokemonHeight"></span></p>
+                        <p><strong>Peso:</strong> <span id="pokemonWeight"></span></p>
+                        <p><strong>Tipo(s):</strong> <span id="pokemonTypes"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog">
+            <h1>Catálogo de Pokémon</h1>
+            <div id="pokemonCatalog" class="catalog-grid">
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
